@@ -77,7 +77,7 @@ class MathToolsTests: XCTestCase {
 
 	func testPerformanceExample() {
 		self.measure {
-			for _ in 0...100 { _ = mathTools.fibonacci(70) }
+			for _ in 0..<10 { _ = mathTools.fibonacci(32) }
 		}
 	}
 }
