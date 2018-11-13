@@ -28,7 +28,7 @@ _Workshop:_
 
 ## Resources
 
-- [Install Swift on Linux](https://swift.org/download/#releases) - we're using version `4.0`
+- [Install Swift on Linux](https://swift.org/download/#releases) - we're using version `4.2`
 - [Open Source Swift](https://swift.org)
 - [Free Swift Book](https://itunes.apple.com/us/book/the-swift-programming-language/id881256329?mt=11)
 - [iOS Documentation](https://developer.apple.com/documentation/)
@@ -36,5 +36,5 @@ _Workshop:_
 
 ## Contact
 
-- [E-mail](mailto:michal.dabrowski+mimuw@daftcode.pl)
+- [E-mail](mailto:ios@daftacademy.pl)
 - [Twitter](https://twitter.com/mdab121)
