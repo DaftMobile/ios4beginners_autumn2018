@@ -1,7 +1,9 @@
 [![iOS 4 Beginners Autumn 2018](assets/logo.png)](https://github.com/DaftMobile/ios4beginners_autumn2018)
 
-![Platforms](https://img.shields.io/badge/platforms-iOS-blue.svg)
-![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+![Platforms](https://img.shields.io/badge/Platform-iOS-blue.svg?style=flat)
+![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat)
+[![Language](https://img.shields.io/badge/Swift-4.2-FA7343.svg?logo=swift&style=flat)](https://swift.org/)
+[![Slack](https://img.shields.io/badge/Slack-ios4beginners--lfv1326.slack.com-56B68B.svg?logo=slack&style=flat)](https://ios4beginners-lfv1326.slack.com/)
 
 
 # iOS 4 Beginners class – MiMUW, Autumn 2018
@@ -36,5 +38,6 @@ _Workshop:_
 
 ## Contact
 
+- [Slack](https://ios4beginners-lfv1326.slack.com/)
 - [E-mail](mailto:ios@daftacademy.pl)
 - [Twitter](https://twitter.com/mdab121)
