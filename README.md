@@ -8,6 +8,16 @@
 
 # iOS 4 Beginners class – MiMUW, Autumn 2018
 
+#### Worshop Results
+
+Workshop results are available [_here_](https://docs.google.com/spreadsheets/d/13SVqW6WuyfQRNcr82uIbwTOoP7PWFx9ceDVNbdZwFgw/edit#gid=0).
+
+Find your data row by hashing your email address using **sha256**. Use an online [tool](http://www.sha1-online.com), or run this bash command:
+
+```sh
+printf "email@domain.com" | openssl sha256
+```
+
 ## Classes
 
 ### Class 1: Hello Swift
