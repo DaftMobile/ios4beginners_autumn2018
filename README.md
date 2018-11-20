@@ -38,6 +38,21 @@ _Workshop:_
 
 **See the workshop assignment [here](./Class%201/Workshop/workshop1.md).**
 
+### Class 2: Intermediate Swift
+
+We were talking about some more advanced concepts of Swift, including:
+
+- Enums!
+- Structs
+- Value Types vs Reference Types
+- Memory management in Swift
+
+To learn more, go through the [Swift Intermediate](./Class%202) playground.
+
+_Workshop:_
+
+**See the workshop assignment [here](./Class%202/Workshop/workshop2.md).**
+
 ## Resources
 
 - [Install Swift on Linux](https://swift.org/download/#releases) - we're using version `4.2`
