@@ -10,11 +10,21 @@ Celem zadania znowu jest swtorzenie jednoekranowej aplikacji **Smile**.
 
 Na ekranie mają się znaleźć 3 elementy: `UILabel`, `SmileView`, oraz `UISlider`. Przeczytaj o [`UILabel`](https://developer.apple.com/documentation/uikit/uilabel) oraz [`UISlider`](https://developer.apple.com/documentation/uikit/uislider) w dokumentacji.
 
-Główną funkcjonalnością aplikacji jest zmienianie poziomu uśmiechu w `SmileView` *oraz* tekstu znajdującego się w `UILabel` w oparciu o poziom przesunięcia `UISlider`'a. Poniżej screenshoty z gotowej aplikacji.
+Główną funkcjonalnością aplikacji jest zmienianie poziomu uśmiechu w `SmileView` *oraz* tekstu znajdującego się w `UILabel` w oparciu o poziom przesunięcia `UISlider`'a.
 
+Poziom uśmiechu zmienia się w zakresie `[-1, +1]`. Sam uśmiech zmienia się płynnie z przesuwaniem Slider'a. Tekst w labelu powinien się zmieniać zgodnie z poniższą rozpiską:
+
+```
+[-1.0, -0.4) -> "Sad 😫"
+[-0.4, +0.4] -> "Meh... 😐"
+(+0.4, +1.0] -> "Smile! 😁"
+```
+
+Poniżej screenshoty z gotowej aplikacji.
 
 ![Screenshot1](assets/s1.png)
-![Screenshot1](assets/s2.png)
+![Screenshot2](assets/s2.png)
+![Screenshot3](assets/s3.png)
 
 ### Wskazówki
 
@@ -48,6 +58,10 @@ class SmileView: UIView {
 
 Ponieważ stworzenie `SmileView` oraz `Core Graphics` nie jest przedmiotem tych zajęć, stworzyłem [plik](assets/SmileView.swift), który zawiera wszystko czego potrzebujecie do stworzenia `SmileView`.
 
+>Widoki na iOS nie przerysowują się magicznie same. SmileView nie wie, że wartość uśmiechu w jego Data Source się zmieniła. Musimy go poprosić o *przerysowanie się*. Na iOS **NIE** wywołujemy funkcji `draw(_ rect:)` bezpośrednio. Zrobi to za nas system operacyjny.
+
+###### Jedyne co musisz zrobić, żeby sprawić że `SmileView` się przerysuje, to wywołać na nim `setNeedsDisplay()`!
+
 ### Kryteria oceny
 
 1. Poprawnie stworzona aplikacja
@@ -55,7 +69,7 @@ Ponieważ stworzenie `SmileView` oraz `Core Graphics` nie jest przedmiotem tych 
 3. Stworzenie odpowiednich constraintów (poprawne wyświetlanie na różnych urządzeniach)
 4. Spięcie `IBOutlet`s oraz `IBAction`s
 5. Skorzystanie z patternu *Data Source*
-6. Reagowanie i zmieiani
+6. Reagowanie na zmieianie przesunięcia Slidera poprzez poprawnie modyfikowanie tekstu oraz widoku SmileView
 
 ### Odpowiedzi
 
