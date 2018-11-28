@@ -60,6 +60,8 @@ Ponieważ stworzenie `SmileView` oraz `Core Graphics` nie jest przedmiotem tych 
 
 >Widoki na iOS nie przerysowują się magicznie same. SmileView nie wie, że wartość uśmiechu w jego Data Source się zmieniła. Musimy go poprosić o *przerysowanie się*. Na iOS **NIE** wywołujemy funkcji `draw(_ rect:)` bezpośrednio. Zrobi to za nas system operacyjny.
 
+>Aby [dodać własną subclassę](https://medium.com/@ludovicjamet/how-to-use-storyboard-to-create-and-preview-custom-views-92acad7405fa) `UIView` (czyli w tym przypadku `SmileView`) do Storyboard'a, przeciągnij zwykły `UIView`, a następnie w Identity Inspectorze ustaw Custom Class.
+
 ###### Jedyne co musisz zrobić, żeby sprawić że `SmileView` się przerysuje, to wywołać na nim `setNeedsDisplay()`!
 
 ### Kryteria oceny
