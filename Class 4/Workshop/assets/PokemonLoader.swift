@@ -24,7 +24,7 @@ protocol PokemonLoading {
 	func load() -> [Pokemon]
 }
 
-class PokemonDiskLoader: PokemonLoading {
+class PokemonHardcodedLoader: PokemonLoading {
 	func load() -> [Pokemon] {
 		return [
 			Pokemon(name: "Bulbasaur", number: 1, color: 8570017),
