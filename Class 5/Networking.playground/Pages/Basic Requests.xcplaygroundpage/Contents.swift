@@ -22,3 +22,19 @@ let urlString = "https://user-images.githubusercontent.com/1230922/49699118-8996
 3. Use the `UIImage(data: Data)` initializer
 */
 
+
+
+//: ## Solution:
+let url = URL(string: urlString)!
+DispatchQueue.global().async {
+	do {
+		let data = try Data(contentsOf: url)
+		DispatchQueue.main.async {
+			UIImage(data: data)
+			PlaygroundPage.current.finishExecution()
+		}
+	} catch {
+		print(error)
+		PlaygroundPage.current.finishExecution()
+	}
+}

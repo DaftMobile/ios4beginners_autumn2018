@@ -27,3 +27,17 @@ let endpoint = "https://switter.app.daftmobile.com/api/hello"
 6. Finally, print the String!
 */
 
+
+
+//: ## Solution:
+let session = URLSession(configuration: URLSessionConfiguration.ephemeral)
+let url = URL(string: endpoint)!
+session.dataTask(with: url) { (data, response, error) in
+	defer { PlaygroundPage.current.finishExecution() }
+	guard error == nil else { print(error!); return }
+	guard let data = data else { print("Could not find data"); return }
+	guard let responseString = String(data: data, encoding: .utf8) else { print("Could not parse the data"); return }
+	print(responseString)
+}.resume()
+
+//: [Next](@next)
