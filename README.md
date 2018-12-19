@@ -115,6 +115,18 @@ _Homework:_
 
 **See the workshop assignment [here](./Class%205/Workshop/workshop5.md).**
 
+### Class 6: Scroll View, Table View, Controllers of Controllers
+
+1. `UIScrollView` (i **highly** recommend all UIScrollView videos from WWDC [here](https://developer.apple.com/videos/))
+2. [`UITableView`](https://developer.apple.com/documentation/uikit/uitableview)
+3. The DataSource - Delegate design pattern. Set your View Controller as the data source for your table views.
+4. Subclass `UITableViewCell` to get your content on screen.
+5. Register your cell class in the Table View
+6. Remember about the cell dequeue - reuse pattern.
+7. [`UINavigationController`](https://developer.apple.com/documentation/uikit/uinavigationcontroller) is a controller of controllers. It manages the navigation stack of the app. It provides the default `NavigationBar` UI, which displays current viewcontroller's title, as well as a back arrow (if there is another viewcontroller on the stack).
+
+You typically call `pushViewController(_:animated:)` on `self.navigationController` from a parent View Controller, or use a Segue when creating your hierarchy in a Storyboard.
+
 ## Resources
 
 - [Install Swift on Linux](https://swift.org/download/#releases) - we're using version `4.2`
